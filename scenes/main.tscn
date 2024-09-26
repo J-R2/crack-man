@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://dxjlhnubm5r6s"]
 
 [ext_resource type="Script" path="res://scenes/main.gd" id="1_d6ijl"]
-[ext_resource type="PackedScene" uid="uid://ci5h4qfpbnha0" path="res://scenes/player/player.tscn" id="2_qo3kn"]
+[ext_resource type="PackedScene" uid="uid://ci5h4qfpbnha0" path="res://scenes/levels/player.tscn" id="2_qo3kn"]
 [ext_resource type="PackedScene" uid="uid://cr4xg0m8r7fiw" path="res://scenes/levels/level_1/level_1.tscn" id="3_sxn1p"]
 [ext_resource type="AudioStream" uid="uid://dhl7egk73gnc0" path="res://music/remnants_of_the_festival.mp3" id="4_7f1hm"]
 [ext_resource type="Script" path="res://music/game_music.gd" id="5_11psy"]
