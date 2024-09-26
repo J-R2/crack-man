@@ -1,11 +1,13 @@
-[gd_scene load_steps=7 format=3 uid="uid://mpkbu4j6cim3"]
+[gd_scene load_steps=9 format=3 uid="uid://mpkbu4j6cim3"]
 
+[ext_resource type="Script" path="res://scenes/main_menu/main_menu.gd" id="1_1snst"]
 [ext_resource type="Texture2D" uid="uid://dykimiuynrqp3" path="res://scenes/main_menu/art/crack-man_banner.png" id="1_wo0p6"]
 [ext_resource type="Texture2D" uid="uid://b4ma6pnspauvv" path="res://scenes/main_menu/art/Window_Header.png" id="2_iy7l6"]
 [ext_resource type="Texture2D" uid="uid://ia5r7f63jp6q" path="res://scenes/main_menu/art/Windows_Button.png" id="3_q4eq2"]
 [ext_resource type="Texture2D" uid="uid://dgktjppjq00qp" path="res://scenes/main_menu/art/Windows_Button_Pressed.png" id="4_vkani"]
 [ext_resource type="Texture2D" uid="uid://ddtpbt6rajkom" path="res://scenes/main_menu/art/Windows_Button_Focus_Outlined.png" id="5_av0pf"]
 [ext_resource type="Texture2D" uid="uid://cnnx057a10dda" path="res://scenes/main_menu/art/Windows_Button_Focus.png" id="6_03o6a"]
+[ext_resource type="AudioStream" uid="uid://gbbm0ln0xbcs" path="res://scenes/main_menu/menu_selection_click.wav" id="8_8hpov"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -14,6 +16,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_1snst")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = -1
@@ -61,7 +64,8 @@ grow_horizontal = 2
 theme_override_font_sizes/font_size = 18
 text = "Crack-Man.exe"
 
-[node name="CloseButton" type="TextureButton" parent="NinePatchRect"]
+[node name="QuitButton" type="TextureButton" parent="NinePatchRect"]
+unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
@@ -78,7 +82,7 @@ texture_hover = ExtResource("5_av0pf")
 texture_focused = ExtResource("5_av0pf")
 stretch_mode = 4
 
-[node name="Label" type="Label" parent="NinePatchRect/CloseButton"]
+[node name="Label" type="Label" parent="NinePatchRect/QuitButton"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -102,10 +106,12 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = 46.0
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="PlayButton" type="TextureButton" parent="NinePatchRect/ButtonsContainer"]
+unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -142,6 +148,7 @@ text = "PLAY"
 horizontal_alignment = 1
 
 [node name="RulesButton" type="TextureButton" parent="NinePatchRect/ButtonsContainer"]
+unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -219,6 +226,7 @@ text = "[ul]
 "
 
 [node name="ReturnButton" type="TextureButton" parent="NinePatchRect/RulesContainer"]
+unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -253,3 +261,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
 text = "Return"
 horizontal_alignment = 1
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_8hpov")
+volume_db = -10.0

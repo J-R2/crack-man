@@ -113,4 +113,3 @@ stream = ExtResource("4_1erbh")
 volume_db = -40.0
 pitch_scale = 0.46
 autoplay = true
-stream_paused = true

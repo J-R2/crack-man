@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://dxjlhnubm5r6s"]
+[gd_scene load_steps=7 format=3 uid="uid://dxjlhnubm5r6s"]
 
 [ext_resource type="Script" path="res://scenes/main.gd" id="1_d6ijl"]
 [ext_resource type="PackedScene" uid="uid://ci5h4qfpbnha0" path="res://scenes/player/player.tscn" id="2_qo3kn"]
 [ext_resource type="PackedScene" uid="uid://cr4xg0m8r7fiw" path="res://scenes/levels/level_1/level_1.tscn" id="3_sxn1p"]
 [ext_resource type="AudioStream" uid="uid://dhl7egk73gnc0" path="res://music/remnants_of_the_festival.mp3" id="4_7f1hm"]
 [ext_resource type="Script" path="res://music/game_music.gd" id="5_11psy"]
+[ext_resource type="PackedScene" uid="uid://mpkbu4j6cim3" path="res://scenes/main_menu/main_menu.tscn" id="6_sx46u"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_d6ijl")
@@ -18,3 +19,12 @@ position = Vector2(-68, -41)
 stream = ExtResource("4_7f1hm")
 volume_db = -20.0
 script = ExtResource("5_11psy")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1024.0
+offset_bottom = 1024.0
+
+[node name="MainMenu" parent="Control" instance=ExtResource("6_sx46u")]
+layout_mode = 1
