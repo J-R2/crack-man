@@ -1,0 +1,68 @@
+[gd_scene load_steps=10 format=3 uid="uid://ci5h4qfpbnha0"]
+
+[ext_resource type="Script" path="res://scenes/player_scene/player.gd" id="1_j8xq1"]
+[ext_resource type="Texture2D" uid="uid://c5hqnvyjcu2il" path="res://scenes/player_scene/climb_spritesheet.png" id="1_retg3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_788si"]
+atlas = ExtResource("1_retg3")
+region = Rect2(0, 73, 123, 73)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nbkoj"]
+atlas = ExtResource("1_retg3")
+region = Rect2(0, 146, 123, 73)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8a8i7"]
+atlas = ExtResource("1_retg3")
+region = Rect2(0, 219, 123, 73)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_muesg"]
+atlas = ExtResource("1_retg3")
+region = Rect2(0, 292, 123, 73)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2toij"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_788si")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nbkoj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8a8i7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_muesg")
+}],
+"loop": true,
+"name": &"move",
+"speed": 8.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4k5oc"]
+radius = 17.5
+height = 95.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qc6lm"]
+radius = 38.75
+
+[node name="Player" type="CharacterBody2D"]
+scale = Vector2(0.8, 0.8)
+script = ExtResource("1_j8xq1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_2toij")
+animation = &"move"
+frame_progress = 0.318625
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(11.25, -3.19744e-14)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_4k5oc")
+
+[node name="CrackBox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CrackBox"]
+position = Vector2(31.25, 0)
+shape = SubResource("CircleShape2D_qc6lm")
+debug_color = Color(1, 1, 1, 0.419608)
