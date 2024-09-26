@@ -3,10 +3,6 @@
 [ext_resource type="Script" path="res://scenes/player_scene/player.gd" id="1_j8xq1"]
 [ext_resource type="Texture2D" uid="uid://c5hqnvyjcu2il" path="res://scenes/player_scene/climb_spritesheet.png" id="1_retg3"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_788si"]
-atlas = ExtResource("1_retg3")
-region = Rect2(0, 73, 123, 73)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_nbkoj"]
 atlas = ExtResource("1_retg3")
 region = Rect2(0, 146, 123, 73)
@@ -19,12 +15,13 @@ region = Rect2(0, 219, 123, 73)
 atlas = ExtResource("1_retg3")
 region = Rect2(0, 292, 123, 73)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_788si"]
+atlas = ExtResource("1_retg3")
+region = Rect2(0, 73, 123, 73)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_2toij"]
 animations = [{
 "frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_788si")
-}, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_nbkoj")
 }, {
@@ -33,6 +30,9 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_muesg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_788si")
 }],
 "loop": true,
 "name": &"move",
@@ -46,14 +46,16 @@ height = 95.0
 [sub_resource type="CircleShape2D" id="CircleShape2D_qc6lm"]
 radius = 38.75
 
-[node name="Player" type="CharacterBody2D"]
-scale = Vector2(0.8, 0.8)
+[node name="Player" type="CharacterBody2D" groups=["player"]]
+scale = Vector2(0.65, 0.65)
+collision_layer = 2
+collision_mask = 13
+motion_mode = 1
 script = ExtResource("1_j8xq1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_2toij")
 animation = &"move"
-frame_progress = 0.318625
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(11.25, -3.19744e-14)
