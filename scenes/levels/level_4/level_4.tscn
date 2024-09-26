@@ -1,0 +1,1134 @@
+[gd_scene load_steps=4 format=3 uid="uid://wmhlsxgmt51o"]
+
+[ext_resource type="Script" path="res://scenes/levels/level.gd" id="1_tmfyp"]
+[ext_resource type="PackedScene" uid="uid://omfltwhnmluv" path="res://scenes/levels/level_4/level_4_map.tscn" id="2_py8bg"]
+[ext_resource type="PackedScene" path="res://scenes/cocaine/cocaine.tscn" id="3_1gr5k"]
+
+[node name="Level4" type="Node2D"]
+script = ExtResource("1_tmfyp")
+
+[node name="Level4Map" parent="." instance=ExtResource("2_py8bg")]
+
+[node name="StartPosition" type="Marker2D" parent="."]
+position = Vector2(513, 912)
+
+[node name="Drugs" type="Node2D" parent="."]
+
+[node name="Cocaine" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(588, 769)
+
+[node name="Cocaine2" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(618, 769)
+
+[node name="Cocaine3" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(646, 769)
+
+[node name="Cocaine4" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(675, 769)
+
+[node name="Cocaine5" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(704, 769)
+
+[node name="Cocaine6" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(736, 769)
+
+[node name="Cocaine7" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(766, 769)
+
+[node name="Cocaine8" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(382, 769)
+
+[node name="Cocaine9" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(412, 769)
+
+[node name="Cocaine10" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(440, 769)
+
+[node name="Cocaine11" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(469, 769)
+
+[node name="Cocaine12" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(498, 769)
+
+[node name="Cocaine13" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(530, 769)
+
+[node name="Cocaine86" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(781, 63)
+
+[node name="Cocaine87" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(811, 63)
+
+[node name="Cocaine88" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(839, 63)
+
+[node name="Cocaine89" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(868, 63)
+
+[node name="Cocaine90" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(897, 63)
+
+[node name="Cocaine91" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(929, 63)
+
+[node name="Cocaine92" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(959, 63)
+
+[node name="Cocaine167" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(959, 77)
+rotation = 1.5708
+
+[node name="Cocaine168" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(959, 107)
+rotation = 1.5708
+
+[node name="Cocaine169" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(959, 137)
+rotation = 1.5708
+
+[node name="Cocaine170" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(959, 164)
+rotation = 1.5708
+
+[node name="Cocaine171" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(959, 194)
+rotation = 1.5708
+
+[node name="Cocaine172" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(959, 225)
+rotation = 1.5708
+
+[node name="Cocaine173" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(959, 255)
+rotation = 1.5708
+
+[node name="Cocaine174" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(959, 283)
+rotation = 1.5708
+
+[node name="Cocaine175" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(868, 172)
+rotation = 1.5708
+
+[node name="Cocaine176" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(868, 202)
+rotation = 1.5708
+
+[node name="Cocaine177" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(868, 232)
+rotation = 1.5708
+
+[node name="Cocaine178" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(868, 259)
+rotation = 1.5708
+
+[node name="Cocaine179" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(868, 289)
+rotation = 1.5708
+
+[node name="Cocaine180" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(868, 320)
+rotation = 1.5708
+
+[node name="Cocaine181" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(868, 350)
+rotation = 1.5708
+
+[node name="Cocaine182" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(868, 378)
+rotation = 1.5708
+
+[node name="Cocaine183" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(868, 405)
+rotation = 1.5708
+
+[node name="Cocaine184" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(868, 435)
+rotation = 1.5708
+
+[node name="Cocaine185" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(868, 465)
+rotation = 1.5708
+
+[node name="Cocaine186" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(868, 492)
+rotation = 1.5708
+
+[node name="Cocaine187" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(868, 522)
+rotation = 1.5708
+
+[node name="Cocaine188" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(868, 553)
+rotation = 1.5708
+
+[node name="Cocaine189" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(868, 583)
+rotation = 1.5708
+
+[node name="Cocaine190" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(868, 611)
+rotation = 1.5708
+
+[node name="Cocaine191" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(868, 639)
+rotation = 1.5708
+
+[node name="Cocaine192" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(868, 669)
+rotation = 1.5708
+
+[node name="Cocaine193" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(868, 699)
+rotation = 1.5708
+
+[node name="Cocaine194" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(868, 726)
+rotation = 1.5708
+
+[node name="Cocaine195" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(868, 756)
+rotation = 1.5708
+
+[node name="Cocaine196" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(868, 787)
+rotation = 1.5708
+
+[node name="Cocaine197" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(868, 817)
+rotation = 1.5708
+
+[node name="Cocaine198" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(868, 845)
+rotation = 1.5708
+
+[node name="Cocaine199" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(960, 737)
+rotation = 1.5708
+
+[node name="Cocaine200" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(960, 767)
+rotation = 1.5708
+
+[node name="Cocaine201" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(960, 797)
+rotation = 1.5708
+
+[node name="Cocaine202" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(960, 824)
+rotation = 1.5708
+
+[node name="Cocaine203" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(960, 854)
+rotation = 1.5708
+
+[node name="Cocaine204" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(960, 885)
+rotation = 1.5708
+
+[node name="Cocaine205" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(960, 915)
+rotation = 1.5708
+
+[node name="Cocaine206" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(960, 943)
+rotation = 1.5708
+
+[node name="Cocaine207" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(770, 547)
+rotation = 1.5708
+
+[node name="Cocaine208" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(770, 577)
+rotation = 1.5708
+
+[node name="Cocaine209" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(770, 607)
+rotation = 1.5708
+
+[node name="Cocaine210" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(770, 634)
+rotation = 1.5708
+
+[node name="Cocaine211" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(770, 664)
+rotation = 1.5708
+
+[node name="Cocaine212" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(770, 695)
+rotation = 1.5708
+
+[node name="Cocaine213" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(770, 725)
+rotation = 1.5708
+
+[node name="Cocaine214" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(770, 753)
+rotation = 1.5708
+
+[node name="Cocaine215" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(770, 266)
+rotation = 1.5708
+
+[node name="Cocaine216" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(770, 296)
+rotation = 1.5708
+
+[node name="Cocaine217" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(770, 326)
+rotation = 1.5708
+
+[node name="Cocaine218" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(770, 353)
+rotation = 1.5708
+
+[node name="Cocaine219" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(770, 383)
+rotation = 1.5708
+
+[node name="Cocaine220" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(770, 414)
+rotation = 1.5708
+
+[node name="Cocaine221" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(770, 444)
+rotation = 1.5708
+
+[node name="Cocaine222" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(770, 472)
+rotation = 1.5708
+
+[node name="Cocaine223" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(673, 366)
+rotation = 1.5708
+
+[node name="Cocaine224" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(673, 396)
+rotation = 1.5708
+
+[node name="Cocaine225" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(673, 426)
+rotation = 1.5708
+
+[node name="Cocaine226" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(672, 452)
+rotation = 1.5708
+
+[node name="Cocaine227" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(673, 483)
+rotation = 1.5708
+
+[node name="Cocaine228" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(673, 514)
+rotation = 1.5708
+
+[node name="Cocaine229" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(673, 544)
+rotation = 1.5708
+
+[node name="Cocaine230" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(673, 572)
+rotation = 1.5708
+
+[node name="Cocaine231" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(354, 366)
+rotation = 1.5708
+
+[node name="Cocaine232" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(354, 396)
+rotation = 1.5708
+
+[node name="Cocaine233" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(354, 426)
+rotation = 1.5708
+
+[node name="Cocaine234" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(354, 453)
+rotation = 1.5708
+
+[node name="Cocaine235" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(354, 483)
+rotation = 1.5708
+
+[node name="Cocaine236" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(354, 514)
+rotation = 1.5708
+
+[node name="Cocaine237" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(354, 544)
+rotation = 1.5708
+
+[node name="Cocaine238" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(354, 572)
+rotation = 1.5708
+
+[node name="Cocaine295" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(354, 598)
+rotation = 1.5708
+
+[node name="Cocaine296" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(354, 625)
+rotation = 1.5708
+
+[node name="Cocaine297" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(354, 654)
+rotation = 1.5708
+
+[node name="Cocaine298" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(258, 738)
+rotation = 1.5708
+
+[node name="Cocaine299" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(258, 766)
+rotation = 1.5708
+
+[node name="Cocaine300" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(66, 711)
+rotation = 1.5708
+
+[node name="Cocaine301" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(66, 683)
+rotation = 1.5708
+
+[node name="Cocaine302" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(66, 654)
+rotation = 1.5708
+
+[node name="Cocaine303" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(66, 625)
+rotation = 1.5708
+
+[node name="Cocaine304" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(63, 365)
+rotation = 1.5708
+
+[node name="Cocaine319" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(63, 394)
+rotation = 1.5708
+
+[node name="Cocaine305" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(63, 336)
+rotation = 1.5708
+
+[node name="Cocaine306" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(63, 307)
+rotation = 1.5708
+
+[node name="Cocaine239" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(258, 269)
+rotation = 1.5708
+
+[node name="Cocaine240" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(258, 299)
+rotation = 1.5708
+
+[node name="Cocaine241" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(258, 329)
+rotation = 1.5708
+
+[node name="Cocaine242" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(258, 356)
+rotation = 1.5708
+
+[node name="Cocaine243" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(258, 386)
+rotation = 1.5708
+
+[node name="Cocaine244" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(258, 417)
+rotation = 1.5708
+
+[node name="Cocaine245" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(258, 447)
+rotation = 1.5708
+
+[node name="Cocaine246" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(258, 475)
+rotation = 1.5708
+
+[node name="Cocaine247" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(258, 503)
+rotation = 1.5708
+
+[node name="Cocaine248" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(258, 533)
+rotation = 1.5708
+
+[node name="Cocaine249" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(258, 563)
+rotation = 1.5708
+
+[node name="Cocaine250" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(258, 590)
+rotation = 1.5708
+
+[node name="Cocaine251" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(258, 620)
+rotation = 1.5708
+
+[node name="Cocaine252" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(258, 651)
+rotation = 1.5708
+
+[node name="Cocaine253" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(258, 681)
+rotation = 1.5708
+
+[node name="Cocaine254" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(258, 709)
+rotation = 1.5708
+
+[node name="Cocaine255" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(161, 654)
+rotation = 1.5708
+
+[node name="Cocaine256" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(161, 684)
+rotation = 1.5708
+
+[node name="Cocaine257" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(161, 714)
+rotation = 1.5708
+
+[node name="Cocaine258" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(161, 741)
+rotation = 1.5708
+
+[node name="Cocaine259" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(161, 771)
+rotation = 1.5708
+
+[node name="Cocaine260" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(161, 802)
+rotation = 1.5708
+
+[node name="Cocaine261" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(161, 832)
+rotation = 1.5708
+
+[node name="Cocaine262" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(161, 860)
+rotation = 1.5708
+
+[node name="Cocaine263" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(66, 739)
+rotation = 1.5708
+
+[node name="Cocaine264" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(66, 769)
+rotation = 1.5708
+
+[node name="Cocaine265" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(66, 799)
+rotation = 1.5708
+
+[node name="Cocaine266" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(66, 826)
+rotation = 1.5708
+
+[node name="Cocaine267" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(66, 856)
+rotation = 1.5708
+
+[node name="Cocaine268" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(66, 887)
+rotation = 1.5708
+
+[node name="Cocaine269" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(66, 917)
+rotation = 1.5708
+
+[node name="Cocaine270" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(66, 945)
+rotation = 1.5708
+
+[node name="Cocaine271" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(161, 418)
+rotation = 1.5708
+
+[node name="Cocaine272" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(161, 448)
+rotation = 1.5708
+
+[node name="Cocaine273" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(161, 478)
+rotation = 1.5708
+
+[node name="Cocaine274" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(161, 505)
+rotation = 1.5708
+
+[node name="Cocaine275" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(161, 535)
+rotation = 1.5708
+
+[node name="Cocaine276" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(161, 566)
+rotation = 1.5708
+
+[node name="Cocaine277" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(161, 596)
+rotation = 1.5708
+
+[node name="Cocaine278" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(161, 624)
+rotation = 1.5708
+
+[node name="Cocaine279" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(161, 186)
+rotation = 1.5708
+
+[node name="Cocaine314" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(161, 166)
+rotation = 1.5708
+
+[node name="Cocaine280" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(161, 216)
+rotation = 1.5708
+
+[node name="Cocaine281" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(161, 246)
+rotation = 1.5708
+
+[node name="Cocaine282" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(161, 273)
+rotation = 1.5708
+
+[node name="Cocaine283" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(161, 303)
+rotation = 1.5708
+
+[node name="Cocaine284" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(161, 334)
+rotation = 1.5708
+
+[node name="Cocaine285" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(161, 364)
+rotation = 1.5708
+
+[node name="Cocaine286" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(161, 392)
+rotation = 1.5708
+
+[node name="Cocaine287" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(63, 72)
+rotation = 1.5708
+
+[node name="Cocaine288" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(63, 102)
+rotation = 1.5708
+
+[node name="Cocaine289" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(63, 132)
+rotation = 1.5708
+
+[node name="Cocaine290" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(63, 159)
+rotation = 1.5708
+
+[node name="Cocaine291" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(63, 189)
+rotation = 1.5708
+
+[node name="Cocaine292" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(63, 220)
+rotation = 1.5708
+
+[node name="Cocaine293" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(63, 250)
+rotation = 1.5708
+
+[node name="Cocaine294" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(63, 278)
+rotation = 1.5708
+
+[node name="Cocaine93" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(752, 63)
+
+[node name="Cocaine94" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(605, 63)
+
+[node name="Cocaine95" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(633, 63)
+
+[node name="Cocaine96" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(662, 63)
+
+[node name="Cocaine97" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(691, 63)
+
+[node name="Cocaine98" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(723, 63)
+
+[node name="Cocaine14" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(560, 769)
+
+[node name="Cocaine15" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(263, 769)
+
+[node name="Cocaine16" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(292, 769)
+
+[node name="Cocaine17" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(324, 769)
+
+[node name="Cocaine18" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(354, 769)
+
+[node name="Cocaine55" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(687, 863)
+
+[node name="Cocaine56" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(717, 863)
+
+[node name="Cocaine57" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(745, 863)
+
+[node name="Cocaine58" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(774, 863)
+
+[node name="Cocaine59" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(803, 863)
+
+[node name="Cocaine60" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(835, 863)
+
+[node name="Cocaine61" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(865, 863)
+
+[node name="Cocaine62" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(481, 863)
+
+[node name="Cocaine63" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(511, 863)
+
+[node name="Cocaine64" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(539, 863)
+
+[node name="Cocaine65" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(568, 863)
+
+[node name="Cocaine66" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(597, 863)
+
+[node name="Cocaine67" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(629, 863)
+
+[node name="Cocaine68" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(659, 863)
+
+[node name="Cocaine69" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(362, 863)
+
+[node name="Cocaine70" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(391, 863)
+
+[node name="Cocaine71" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(423, 863)
+
+[node name="Cocaine73" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(236, 65)
+
+[node name="Cocaine74" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(266, 65)
+
+[node name="Cocaine83" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(207, 65)
+
+[node name="Cocaine84" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(87, 65)
+
+[node name="Cocaine85" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(60, 65)
+
+[node name="Cocaine75" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(294, 65)
+
+[node name="Cocaine76" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(323, 65)
+
+[node name="Cocaine77" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(352, 65)
+
+[node name="Cocaine78" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(384, 65)
+
+[node name="Cocaine79" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(414, 65)
+
+[node name="Cocaine80" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(117, 65)
+
+[node name="Cocaine81" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(146, 65)
+
+[node name="Cocaine82" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(178, 65)
+
+[node name="Cocaine72" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(453, 863)
+
+[node name="Cocaine19" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(588, 256)
+
+[node name="Cocaine20" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(618, 256)
+
+[node name="Cocaine21" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(646, 256)
+
+[node name="Cocaine22" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(675, 256)
+
+[node name="Cocaine23" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(704, 256)
+
+[node name="Cocaine24" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(736, 256)
+
+[node name="Cocaine25" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(766, 256)
+
+[node name="Cocaine26" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(382, 256)
+
+[node name="Cocaine27" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(412, 256)
+
+[node name="Cocaine28" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(440, 256)
+
+[node name="Cocaine29" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(469, 256)
+
+[node name="Cocaine30" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(498, 256)
+
+[node name="Cocaine31" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(530, 256)
+
+[node name="Cocaine32" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(560, 256)
+
+[node name="Cocaine33" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(263, 256)
+
+[node name="Cocaine34" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(292, 256)
+
+[node name="Cocaine315" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(150, 412)
+
+[node name="Cocaine316" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(121, 412)
+
+[node name="Cocaine317" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(91, 412)
+
+[node name="Cocaine318" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(61, 412)
+
+[node name="Cocaine35" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(324, 256)
+
+[node name="Cocaine36" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(354, 256)
+
+[node name="Cocaine37" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(691, 160)
+
+[node name="Cocaine38" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(721, 160)
+
+[node name="Cocaine39" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(749, 160)
+
+[node name="Cocaine40" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(778, 160)
+
+[node name="Cocaine41" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(807, 160)
+
+[node name="Cocaine42" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(839, 160)
+
+[node name="Cocaine43" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(869, 160)
+
+[node name="Cocaine44" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(485, 160)
+
+[node name="Cocaine45" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(515, 160)
+
+[node name="Cocaine46" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(543, 160)
+
+[node name="Cocaine47" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(572, 160)
+
+[node name="Cocaine48" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(601, 160)
+
+[node name="Cocaine49" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(633, 160)
+
+[node name="Cocaine50" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(663, 160)
+
+[node name="Cocaine51" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(366, 160)
+
+[node name="Cocaine307" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(336, 160)
+
+[node name="Cocaine308" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(309, 160)
+
+[node name="Cocaine309" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(281, 160)
+
+[node name="Cocaine310" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(253, 160)
+
+[node name="Cocaine311" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(224, 160)
+
+[node name="Cocaine312" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(196, 160)
+
+[node name="Cocaine313" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(167, 160)
+
+[node name="Cocaine52" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(395, 160)
+
+[node name="Cocaine53" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(427, 160)
+
+[node name="Cocaine54" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(457, 160)
+
+[node name="Cocaine99" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(354, 353)
+
+[node name="Cocaine100" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(383, 353)
+
+[node name="Cocaine101" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(414, 352)
+
+[node name="Cocaine102" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(443, 352)
+
+[node name="Cocaine103" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(472, 352)
+
+[node name="Cocaine104" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(502, 352)
+
+[node name="Cocaine105" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(531, 352)
+
+[node name="Cocaine106" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(562, 351)
+
+[node name="Cocaine107" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(591, 351)
+
+[node name="Cocaine108" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(620, 351)
+
+[node name="Cocaine109" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(650, 351)
+
+[node name="Cocaine110" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(678, 351)
+
+[node name="Cocaine111" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(351, 672)
+
+[node name="Cocaine112" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(380, 672)
+
+[node name="Cocaine113" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(411, 671)
+
+[node name="Cocaine114" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(440, 671)
+
+[node name="Cocaine115" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(469, 671)
+
+[node name="Cocaine116" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(499, 671)
+
+[node name="Cocaine117" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(528, 671)
+
+[node name="Cocaine118" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(559, 670)
+
+[node name="Cocaine119" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(588, 670)
+
+[node name="Cocaine120" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(617, 670)
+
+[node name="Cocaine121" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(647, 670)
+
+[node name="Cocaine122" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(675, 670)
+
+[node name="Cocaine123" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(640, 958)
+
+[node name="Cocaine124" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(669, 958)
+
+[node name="Cocaine125" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(700, 957)
+
+[node name="Cocaine126" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(729, 957)
+
+[node name="Cocaine127" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(758, 957)
+
+[node name="Cocaine128" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(788, 957)
+
+[node name="Cocaine129" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(817, 957)
+
+[node name="Cocaine130" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(848, 956)
+
+[node name="Cocaine131" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(877, 956)
+
+[node name="Cocaine132" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(906, 956)
+
+[node name="Cocaine133" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(936, 956)
+
+[node name="Cocaine134" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(964, 956)
+
+[node name="Cocaine135" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(62, 958)
+
+[node name="Cocaine136" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(91, 958)
+
+[node name="Cocaine137" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(122, 957)
+
+[node name="Cocaine138" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(151, 957)
+
+[node name="Cocaine139" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(180, 957)
+
+[node name="Cocaine140" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(210, 957)
+
+[node name="Cocaine141" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(239, 957)
+
+[node name="Cocaine142" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(270, 956)
+
+[node name="Cocaine143" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(299, 956)
+
+[node name="Cocaine144" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(328, 956)
+
+[node name="Cocaine145" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(358, 956)
+
+[node name="Cocaine146" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(386, 956)
+
+[node name="Cocaine147" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(406, 950)
+rotation = -1.5708
+
+[node name="Cocaine148" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(406, 921)
+rotation = -1.5708
+
+[node name="Cocaine149" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(406, 894)
+rotation = -1.5708
+
+[node name="Cocaine150" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(406, 872)
+rotation = -1.5708
+
+[node name="Cocaine151" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(620, 954)
+rotation = -1.5708
+
+[node name="Cocaine152" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(620, 925)
+rotation = -1.5708
+
+[node name="Cocaine153" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(620, 898)
+rotation = -1.5708
+
+[node name="Cocaine154" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(620, 876)
+rotation = -1.5708
+
+[node name="Cocaine155" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(613, 154)
+rotation = -1.5708
+
+[node name="Cocaine156" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(613, 125)
+rotation = -1.5708
+
+[node name="Cocaine157" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(613, 98)
+rotation = -1.5708
+
+[node name="Cocaine158" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(613, 76)
+rotation = -1.5708
+
+[node name="Cocaine159" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(409, 152)
+rotation = -1.5708
+
+[node name="Cocaine160" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(409, 123)
+rotation = -1.5708
+
+[node name="Cocaine161" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(409, 96)
+rotation = -1.5708
+
+[node name="Cocaine162" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(409, 74)
+rotation = -1.5708
+
+[node name="Cocaine163" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(511, 247)
+rotation = -1.5708
+
+[node name="Cocaine164" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(511, 218)
+rotation = -1.5708
+
+[node name="Cocaine165" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(511, 191)
+rotation = -1.5708
+
+[node name="Cocaine166" parent="Drugs" instance=ExtResource("3_1gr5k")]
+position = Vector2(511, 169)
+rotation = -1.5708

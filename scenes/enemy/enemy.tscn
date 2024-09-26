@@ -104,7 +104,6 @@ frame_progress = 0.720999
 [node name="KillBox" parent="." instance=ExtResource("3_1d21i")]
 
 [node name="StartTimer" type="Timer" parent="."]
-wait_time = 2.0
 one_shot = true
 autostart = true
 

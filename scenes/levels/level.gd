@@ -20,6 +20,7 @@ var consumed_amount :int = 0
 func _ready() -> void:
 	# Add level to the level group.
 	add_to_group("level")
+	$Drugs.show()
 	# Connect the consumed signal if the child is a drug.
 	for drug in $Drugs.get_children():
 		if drug is Cocaine:

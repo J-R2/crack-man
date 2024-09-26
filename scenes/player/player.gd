@@ -1,7 +1,7 @@
 class_name Player
 extends CharacterBody2D
 
-const SPEED :int = 300 ## The player's speed.
+const SPEED :int = 250 ## The player's speed.
 const STEERING_FORCE :int = 15 ## The player sprites steering force.
 const SPRITE_SIZE :int = 90 / 2 ## The size of the sprite, used to make a clean warp to the other side of the screen.
 

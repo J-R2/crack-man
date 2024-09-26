@@ -28,6 +28,7 @@ next_level = ExtResource("2_dl2l3")
 position = Vector2(501, 913)
 
 [node name="Drugs" type="Node2D" parent="."]
+visible = false
 
 [node name="Cocaine" parent="Drugs" instance=ExtResource("3_jxt1f")]
 position = Vector2(87, 64)

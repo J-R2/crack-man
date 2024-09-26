@@ -38,6 +38,7 @@ script = ExtResource("1_2eora")
 position = Vector2(515, 877)
 
 [node name="Drugs" type="Node2D" parent="."]
+visible = false
 
 [node name="Cocaine" parent="Drugs" instance=ExtResource("2_6dm25")]
 position = Vector2(667, 66)

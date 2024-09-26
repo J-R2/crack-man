@@ -27,4 +27,5 @@ offset_right = 1024.0
 offset_bottom = 1024.0
 
 [node name="MainMenu" parent="Control" instance=ExtResource("6_sx46u")]
+visible = false
 layout_mode = 1

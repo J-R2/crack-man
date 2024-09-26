@@ -40,7 +40,9 @@ func _show_rules() -> void :
 	%QuitButton.disabled = false
 
 
-func _show_main_menu() -> void : 
+func _show_main_menu() -> void :
+	show()
+	$CanvasLayer.visible = true
 	_hide_menu_entries()
 	buttons_container.show()
 	%PlayButton.disabled = false
