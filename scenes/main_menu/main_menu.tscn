@@ -20,6 +20,7 @@ script = ExtResource("1_1snst")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = -1
+visible = false
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
 anchors_preset = 15
@@ -30,7 +31,6 @@ grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
 [node name="Banner" type="Sprite2D" parent="CanvasLayer/ColorRect"]
-visible = false
 position = Vector2(512, 168)
 texture = ExtResource("2_hx5iu")
 
