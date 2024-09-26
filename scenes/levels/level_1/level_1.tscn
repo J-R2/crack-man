@@ -1,9 +1,16 @@
-[gd_scene load_steps=5 format=3 uid="uid://cr4xg0m8r7fiw"]
+[gd_scene load_steps=7 format=3 uid="uid://cr4xg0m8r7fiw"]
 
 [ext_resource type="PackedScene" uid="uid://bhi2k72chif5s" path="res://scenes/levels/level_1/level_1_map.tscn" id="1_krque"]
 [ext_resource type="Script" path="res://scenes/levels/level.gd" id="1_vhawr"]
 [ext_resource type="PackedScene" uid="uid://dtiybepue41ym" path="res://scenes/levels/level_2/level_2.tscn" id="2_5xi6l"]
 [ext_resource type="PackedScene" uid="uid://b3hjvym3k7ha2" path="res://scenes/cocaine/cocaine.tscn" id="4_ek2o6"]
+[ext_resource type="PackedScene" uid="uid://dou4fduun4n66" path="res://scenes/enemy/enemy.tscn" id="5_4ehw5"]
+
+[sub_resource type="Curve2D" id="Curve2D_gcgtn"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 504, 112, 0, 0, 0, 0, 609, 112, 0, 0, 0, 0, 606, 60, 0, 0, 0, 0, 960, 61, 0, 0, 0, 0, 963, 351, 0, 0, 0, 0, 896, 352, 0, 0, 0, 0, 898, 556, 0, 0, 0, 0, 961, 556, 0, 0, 0, 0, 963, 956, 0, 0, 0, 0, 615, 956, 0, 0, 0, 0, 614, 860, 0, 0, 0, 0, 862, 861, 0, 0, 0, 0, 862, 772, 0, 0, 0, 0, 228, 771, 0, 0, 0, 0, 227, 858, 0, 0, 0, 0, 69, 859, 0, 0, 0, 0, 67, 543, 0, 0, 0, 0, 159, 545, 0, 0, 0, 0, 159, 355, 0, 0, 0, 0, 69, 354, 0, 0, 0, 0, 68, 68, 0, 0, 0, 0, 415, 67, 0, 0, 0, 0, 416, 112, 0, 0, 0, 0, 504, 112)
+}
+point_count = 24
 
 [node name="Level1" type="Node2D"]
 script = ExtResource("1_vhawr")
@@ -1513,3 +1520,10 @@ rotation = 4.71238
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 volume_db = -38.0
+
+[node name="Path2D" type="Path2D" parent="."]
+visible = false
+curve = SubResource("Curve2D_gcgtn")
+
+[node name="Enemy" parent="Path2D" instance=ExtResource("5_4ehw5")]
+position = Vector2(504, 112)
