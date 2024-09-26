@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://scenes/levels/level.gd" id="1_s8xt6"]
 [ext_resource type="PackedScene" uid="uid://du4ed28cw11rb" path="res://scenes/levels/level_3/level_3.tscn" id="2_dl2l3"]
 [ext_resource type="PackedScene" uid="uid://oiylfy376wvh" path="res://scenes/levels/level_2/level_2_map.tscn" id="2_g6uky"]
-[ext_resource type="PackedScene" uid="uid://b3hjvym3k7ha2" path="res://scenes/cocaine/cocaine.tscn" id="3_jxt1f"]
+[ext_resource type="PackedScene" uid="uid://dvb77nosvyl0b" path="res://scenes/cocaine/cocaine.tscn" id="3_jxt1f"]
 [ext_resource type="PackedScene" uid="uid://dou4fduun4n66" path="res://scenes/enemy/enemy.tscn" id="5_jskc3"]
 
 [sub_resource type="Curve2D" id="Curve2D_wyor1"]
