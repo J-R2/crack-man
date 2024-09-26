@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5hqnvyjcu2il"
-path="res://.godot/imported/climb_spritesheet.png-c7674d4bfb4f7dcdc91e020e69189ecb.ctex"
+uid="uid://c86jq5tpvwidl"
+path="res://.godot/imported/cocaine.png-1b6e076d8c3e3729f87165a9dde7b1d4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/player_scene/climb_spritesheet.png"
-dest_files=["res://.godot/imported/climb_spritesheet.png-c7674d4bfb4f7dcdc91e020e69189ecb.ctex"]
+source_file="res://scenes/cocaine/cocaine.png"
+dest_files=["res://.godot/imported/cocaine.png-1b6e076d8c3e3729f87165a9dde7b1d4.ctex"]
 
 [params]
 
