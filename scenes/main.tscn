@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://scenes/main.gd" id="1_d6ijl"]
 [ext_resource type="PackedScene" uid="uid://ci5h4qfpbnha0" path="res://scenes/player/player.tscn" id="2_qo3kn"]
 [ext_resource type="PackedScene" uid="uid://cr4xg0m8r7fiw" path="res://scenes/levels/level_1/level_1.tscn" id="3_sxn1p"]
-[ext_resource type="AudioStream" uid="uid://dxju2fmdv36om" path="res://music/bonus_level.mp3" id="4_nea0d"]
+[ext_resource type="AudioStream" uid="uid://dhl7egk73gnc0" path="res://music/remnants_of_the_festival.mp3" id="4_7f1hm"]
 [ext_resource type="Script" path="res://music/game_music.gd" id="5_11psy"]
 
 [node name="Main" type="Node2D"]
@@ -15,6 +15,6 @@ script = ExtResource("1_d6ijl")
 position = Vector2(-68, -41)
 
 [node name="GameMusic" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("4_nea0d")
-volume_db = -15.0
+stream = ExtResource("4_7f1hm")
+volume_db = -20.0
 script = ExtResource("5_11psy")

@@ -1,6 +1,7 @@
 class_name Level
 extends Node2D
 
+## Emitted once all drugs are consumed.
 signal level_finished
 
 ## The position that the player is set to once the level is loaded.
