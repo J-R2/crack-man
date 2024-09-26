@@ -10,7 +10,7 @@ var level :Level
 
 func _ready() -> void:
 	_initialize_level()
-
+	player.player_hit.connect(func()-> void : player.position = level.start_position)
 
 ## Frees the current level and loads the next one into the scene tree, then initializes the next level
 func _on_level_finished() -> void :

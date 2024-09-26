@@ -5,6 +5,10 @@ const SPEED :int = 250 ## The player's speed.
 const STEERING_FORCE :int = 15 ## The player sprites steering force.
 const SPRITE_SIZE :int = 90 / 2 ## The size of the sprite, used to make a clean warp to the other side of the screen.
 
+signal player_hit
+@onready var lives_label: Label = $LivesLabel
+var lives_count = 3
+
 ## The player sprite.
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 ## The size of the viewport.
@@ -36,7 +40,15 @@ func _process(delta: float) -> void:
 
 func _on_hit_box_entered(area :Area2D) -> void:
 	if area is KillBox:
-		print("died")
+		player_hit.emit()
+		lives_count -= 1
+		if lives_count == 2:
+			lives_label.text = "I I"
+		if lives_count == 1:
+			lives_label.text = "I"
+		if lives_count == 0:
+			get_tree().reload_current_scene()
+			
 
 
 
