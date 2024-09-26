@@ -1,6 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://bxw27jalis8ff"]
+[gd_scene load_steps=10 format=3 uid="uid://bxw27jalis8ff"]
 
 [ext_resource type="Script" path="res://scenes/levels/level.gd" id="1_rpl6r"]
+[ext_resource type="PackedScene" uid="uid://b25t1ej2nv3cc" path="res://scenes/levels/level_8/level_8.tscn" id="2_6bg53"]
 [ext_resource type="PackedScene" uid="uid://chbpofodiolws" path="res://scenes/levels/level_7/level_7_map.tscn" id="2_ll41s"]
 [ext_resource type="PackedScene" uid="uid://dvb77nosvyl0b" path="res://scenes/cocaine/cocaine.tscn" id="3_ne7hg"]
 [ext_resource type="PackedScene" uid="uid://dou4fduun4n66" path="res://scenes/enemy/enemy.tscn" id="4_2b7dt"]
@@ -31,6 +32,7 @@ point_count = 15
 
 [node name="Level7" type="Node2D"]
 script = ExtResource("1_rpl6r")
+next_level = ExtResource("2_6bg53")
 
 [node name="Level7Map" parent="." instance=ExtResource("2_ll41s")]
 
