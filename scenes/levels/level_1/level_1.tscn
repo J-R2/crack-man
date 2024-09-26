@@ -456,24 +456,6 @@ position = Vector2(376, 675)
 [node name="Cocaine81" parent="Drugs" instance=ExtResource("4_ek2o6")]
 position = Vector2(407, 674)
 
-[node name="Cocaine82" parent="Drugs" instance=ExtResource("4_ek2o6")]
-position = Vector2(438, 674)
-
-[node name="Cocaine83" parent="Drugs" instance=ExtResource("4_ek2o6")]
-position = Vector2(468, 673)
-
-[node name="Cocaine84" parent="Drugs" instance=ExtResource("4_ek2o6")]
-position = Vector2(499, 674)
-
-[node name="Cocaine85" parent="Drugs" instance=ExtResource("4_ek2o6")]
-position = Vector2(531, 673)
-
-[node name="Cocaine86" parent="Drugs" instance=ExtResource("4_ek2o6")]
-position = Vector2(562, 673)
-
-[node name="Cocaine87" parent="Drugs" instance=ExtResource("4_ek2o6")]
-position = Vector2(593, 672)
-
 [node name="Cocaine88" parent="Drugs" instance=ExtResource("4_ek2o6")]
 position = Vector2(624, 672)
 
@@ -539,24 +521,6 @@ position = Vector2(374, 770)
 
 [node name="Cocaine105" parent="Drugs" instance=ExtResource("4_ek2o6")]
 position = Vector2(405, 769)
-
-[node name="Cocaine106" parent="Drugs" instance=ExtResource("4_ek2o6")]
-position = Vector2(436, 769)
-
-[node name="Cocaine107" parent="Drugs" instance=ExtResource("4_ek2o6")]
-position = Vector2(466, 768)
-
-[node name="Cocaine108" parent="Drugs" instance=ExtResource("4_ek2o6")]
-position = Vector2(497, 769)
-
-[node name="Cocaine109" parent="Drugs" instance=ExtResource("4_ek2o6")]
-position = Vector2(527, 769)
-
-[node name="Cocaine110" parent="Drugs" instance=ExtResource("4_ek2o6")]
-position = Vector2(558, 769)
-
-[node name="Cocaine111" parent="Drugs" instance=ExtResource("4_ek2o6")]
-position = Vector2(589, 768)
 
 [node name="Cocaine112" parent="Drugs" instance=ExtResource("4_ek2o6")]
 position = Vector2(620, 768)
@@ -1479,10 +1443,6 @@ rotation = 4.71238
 position = Vector2(225, 818)
 rotation = 4.71238
 
-[node name="Cocaine239" parent="Drugs" instance=ExtResource("4_ek2o6")]
-position = Vector2(516, 787)
-rotation = 4.71238
-
 [node name="Cocaine240" parent="Drugs" instance=ExtResource("4_ek2o6")]
 position = Vector2(517, 817)
 rotation = 4.71238
@@ -1552,5 +1512,4 @@ position = Vector2(160, 687)
 rotation = 4.71238
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-
-[node name="Timer" type="Timer" parent="."]
+volume_db = -38.0

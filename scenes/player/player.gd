@@ -2,7 +2,7 @@ class_name Player
 extends CharacterBody2D
 
 const SPEED :int = 200
-const STEERING_FORCE :int = 8
+const STEERING_FORCE :int = 15
 const SPRITE_SIZE :int = 90 / 2
 
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D

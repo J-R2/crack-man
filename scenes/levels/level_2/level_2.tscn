@@ -1,9 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://dtiybepue41ym"]
+[gd_scene load_steps=4 format=3 uid="uid://dtiybepue41ym"]
 
 [ext_resource type="Script" path="res://scenes/levels/level.gd" id="1_s8xt6"]
 [ext_resource type="PackedScene" uid="uid://oiylfy376wvh" path="res://scenes/levels/level_2/level_2_map.tscn" id="2_g6uky"]
 [ext_resource type="PackedScene" uid="uid://b3hjvym3k7ha2" path="res://scenes/cocaine/cocaine.tscn" id="3_jxt1f"]
-[ext_resource type="AudioStream" uid="uid://1jadfk2kh5ev" path="res://scenes/cocaine/sniffing_sound_cut.mp3" id="4_lgh85"]
 
 [node name="Level" type="Node2D"]
 script = ExtResource("1_s8xt6")
@@ -11,7 +10,7 @@ script = ExtResource("1_s8xt6")
 [node name="Level2Map" parent="." instance=ExtResource("2_g6uky")]
 
 [node name="StartPosition" type="Marker2D" parent="."]
-position = Vector2(493, 913)
+position = Vector2(501, 913)
 
 [node name="Drugs" type="Node2D" parent="."]
 
@@ -302,15 +301,15 @@ position = Vector2(769, 723)
 rotation = -1.57079
 
 [node name="Cocaine364" parent="Drugs" instance=ExtResource("3_jxt1f")]
-position = Vector2(735, 785)
+position = Vector2(670, 784)
 rotation = -1.57079
 
 [node name="Cocaine365" parent="Drugs" instance=ExtResource("3_jxt1f")]
-position = Vector2(736, 815)
+position = Vector2(670, 815)
 rotation = -1.57079
 
 [node name="Cocaine366" parent="Drugs" instance=ExtResource("3_jxt1f")]
-position = Vector2(737, 846)
+position = Vector2(671, 843)
 rotation = -1.57079
 
 [node name="Cocaine234" parent="Drugs" instance=ExtResource("3_jxt1f")]
@@ -606,7 +605,7 @@ position = Vector2(355, 616)
 rotation = -1.57079
 
 [node name="Cocaine326" parent="Drugs" instance=ExtResource("3_jxt1f")]
-position = Vector2(543, 691)
+position = Vector2(499, 692)
 rotation = -1.57079
 
 [node name="Cocaine335" parent="Drugs" instance=ExtResource("3_jxt1f")]
@@ -622,15 +621,15 @@ position = Vector2(256, 736)
 rotation = -1.57079
 
 [node name="Cocaine349" parent="Drugs" instance=ExtResource("3_jxt1f")]
-position = Vector2(351, 787)
+position = Vector2(321, 786)
 rotation = -1.57079
 
 [node name="Cocaine350" parent="Drugs" instance=ExtResource("3_jxt1f")]
-position = Vector2(351, 816)
+position = Vector2(322, 816)
 rotation = -1.57079
 
 [node name="Cocaine351" parent="Drugs" instance=ExtResource("3_jxt1f")]
-position = Vector2(351, 846)
+position = Vector2(321, 845)
 rotation = -1.57079
 
 [node name="Cocaine338" parent="Drugs" instance=ExtResource("3_jxt1f")]
@@ -638,11 +637,11 @@ position = Vector2(256, 765)
 rotation = -1.57079
 
 [node name="Cocaine327" parent="Drugs" instance=ExtResource("3_jxt1f")]
-position = Vector2(543, 722)
+position = Vector2(499, 722)
 rotation = -1.57079
 
 [node name="Cocaine328" parent="Drugs" instance=ExtResource("3_jxt1f")]
-position = Vector2(545, 749)
+position = Vector2(499, 751)
 rotation = -1.57079
 
 [node name="Cocaine284" parent="Drugs" instance=ExtResource("3_jxt1f")]
@@ -1131,12 +1130,6 @@ position = Vector2(742, 766)
 [node name="Cocaine118" parent="Drugs" instance=ExtResource("3_jxt1f")]
 position = Vector2(772, 767)
 
-[node name="Cocaine119" parent="Drugs" instance=ExtResource("3_jxt1f")]
-position = Vector2(571, 864)
-
-[node name="Cocaine120" parent="Drugs" instance=ExtResource("3_jxt1f")]
-position = Vector2(601, 864)
-
 [node name="Cocaine121" parent="Drugs" instance=ExtResource("3_jxt1f")]
 position = Vector2(630, 863)
 
@@ -1194,32 +1187,14 @@ position = Vector2(330, 863)
 [node name="Cocaine134" parent="Drugs" instance=ExtResource("3_jxt1f")]
 position = Vector2(361, 863)
 
-[node name="Cocaine135" parent="Drugs" instance=ExtResource("3_jxt1f")]
-position = Vector2(393, 863)
-
-[node name="Cocaine136" parent="Drugs" instance=ExtResource("3_jxt1f")]
-position = Vector2(424, 863)
-
-[node name="Cocaine137" parent="Drugs" instance=ExtResource("3_jxt1f")]
-position = Vector2(453, 862)
-
-[node name="Cocaine138" parent="Drugs" instance=ExtResource("3_jxt1f")]
-position = Vector2(482, 863)
-
-[node name="Cocaine139" parent="Drugs" instance=ExtResource("3_jxt1f")]
-position = Vector2(512, 862)
-
-[node name="Cocaine140" parent="Drugs" instance=ExtResource("3_jxt1f")]
-position = Vector2(542, 863)
-
-[node name="Cocaine141" parent="Drugs" instance=ExtResource("3_jxt1f")]
-position = Vector2(62, 959)
-
-[node name="Cocaine142" parent="Drugs" instance=ExtResource("3_jxt1f")]
-position = Vector2(92, 959)
-
 [node name="Cocaine143" parent="Drugs" instance=ExtResource("3_jxt1f")]
 position = Vector2(121, 958)
+
+[node name="Cocaine152" parent="Drugs" instance=ExtResource("3_jxt1f")]
+position = Vector2(93, 958)
+
+[node name="Cocaine153" parent="Drugs" instance=ExtResource("3_jxt1f")]
+position = Vector2(67, 958)
 
 [node name="Cocaine144" parent="Drugs" instance=ExtResource("3_jxt1f")]
 position = Vector2(149, 958)
@@ -1244,30 +1219,6 @@ position = Vector2(331, 957)
 
 [node name="Cocaine151" parent="Drugs" instance=ExtResource("3_jxt1f")]
 position = Vector2(361, 958)
-
-[node name="Cocaine152" parent="Drugs" instance=ExtResource("3_jxt1f")]
-position = Vector2(389, 959)
-
-[node name="Cocaine153" parent="Drugs" instance=ExtResource("3_jxt1f")]
-position = Vector2(419, 959)
-
-[node name="Cocaine154" parent="Drugs" instance=ExtResource("3_jxt1f")]
-position = Vector2(448, 958)
-
-[node name="Cocaine155" parent="Drugs" instance=ExtResource("3_jxt1f")]
-position = Vector2(476, 958)
-
-[node name="Cocaine156" parent="Drugs" instance=ExtResource("3_jxt1f")]
-position = Vector2(507, 958)
-
-[node name="Cocaine157" parent="Drugs" instance=ExtResource("3_jxt1f")]
-position = Vector2(539, 958)
-
-[node name="Cocaine158" parent="Drugs" instance=ExtResource("3_jxt1f")]
-position = Vector2(570, 958)
-
-[node name="Cocaine159" parent="Drugs" instance=ExtResource("3_jxt1f")]
-position = Vector2(599, 957)
 
 [node name="Cocaine160" parent="Drugs" instance=ExtResource("3_jxt1f")]
 position = Vector2(628, 958)
@@ -1410,9 +1361,3 @@ rotation = 1.57079
 [node name="Cocaine315" parent="Drugs" instance=ExtResource("3_jxt1f")]
 position = Vector2(677, 562)
 rotation = 1.57079
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("4_lgh85")
-
-[node name="Timer" type="Timer" parent="."]
-one_shot = true

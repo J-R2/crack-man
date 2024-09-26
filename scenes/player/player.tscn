@@ -45,7 +45,7 @@ radius = 26.1539
 height = 95.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_qc6lm"]
-radius = 605.669
+radius = 27.255
 
 [node name="Player" type="CharacterBody2D" groups=["player"]]
 scale = Vector2(0.65, 0.65)
