@@ -1,8 +1,33 @@
-[gd_scene load_steps=4 format=3 uid="uid://du4ed28cw11rb"]
+[gd_scene load_steps=9 format=3 uid="uid://du4ed28cw11rb"]
 
 [ext_resource type="Script" path="res://scenes/levels/level.gd" id="1_2eora"]
 [ext_resource type="PackedScene" uid="uid://bfjy1qfumx370" path="res://scenes/levels/level_3/level_3_map.tscn" id="1_g56b0"]
 [ext_resource type="PackedScene" uid="uid://b3hjvym3k7ha2" path="res://scenes/cocaine/cocaine.tscn" id="2_6dm25"]
+[ext_resource type="PackedScene" uid="uid://dou4fduun4n66" path="res://scenes/enemy/enemy.tscn" id="4_mkmf4"]
+
+[sub_resource type="Curve2D" id="Curve2D_bns1a"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 954, 64, 0, 0, 0, 0, 256, 66, 0, 0, 0, 0, 256, 158, 0, 0, 0, 0, 155, 158, 0, 0, 0, 0, 155, 383, 0, 0, 0, 0, 278, 382, 0, 0, 0, 0, 277, 256, 0, 0, 0, 0, 754, 255, 0, 0, 0, 0, 754, 382, 0, 0, 0, 0, 956, 384, 0, 0, 0, 0, 954, 64)
+}
+point_count = 11
+
+[sub_resource type="Curve2D" id="Curve2D_1grky"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 289, 577, 0, 0, 0, 0, 66, 576, 0, 0, 0, 0, 66, 964, 0, 0, 0, 0, 255, 963, 0, 0, 0, 0, 254, 868, 0, 0, 0, 0, 159, 870, 0, 0, 0, 0, 159, 766, 0, 0, 0, 0, 193, 767, 0, 0, 0, 0, 192, 674, 0, 0, 0, 0, 415, 673, 0, 0, 0, 0, 415, 772, 0, 0, 0, 0, 291, 771, 0, 0, 0, 0, 289, 577)
+}
+point_count = 13
+
+[sub_resource type="Curve2D" id="Curve2D_xp5bi"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 611, 957, 0, 0, 0, 0, 929, 957, 0, 0, 0, 0, 926, 667, 0, 0, 0, 0, 959, 667, 0, 0, 0, 0, 959, 579, 0, 0, 0, 0, 834, 579, 0, 0, 0, 0, 833, 768, 0, 0, 0, 0, 609, 769, 0, 0, 0, 0, 611, 673, 0, 0, 0, 0, 734, 673, 0, 0, 0, 0, 734, 580, 0, 0, 0, 0, 833, 580, 0, 0, 0, 0, 832, 863, 0, 0, 0, 0, 610, 863, 0, 0, 0, 0, 611, 957)
+}
+point_count = 15
+
+[sub_resource type="Curve2D" id="Curve2D_llwa7"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 395, 361, 0, 0, 0, 0, 632, 360, 0, 0, 0, 0, 636, 478, 0, 0, 0, 0, 1221, 477, 0, 0, 0, 0, 1219, 1188, 0, 0, 0, 0, -173, 1188, 0, 0, 0, 0, -169, 478, 0, 0, 0, 0, -169, 478, 0, 0, 0, 0, 396, 476, 0, 0, 0, 0, 395, 361)
+}
+point_count = 10
 
 [node name="Level3" type="Node2D"]
 script = ExtResource("1_2eora")
@@ -1398,3 +1423,36 @@ position = Vector2(813, 863)
 
 [node name="Cocaine143" parent="Drugs" instance=ExtResource("2_6dm25")]
 position = Vector2(842, 863)
+
+[node name="Path2D" type="Path2D" parent="."]
+curve = SubResource("Curve2D_bns1a")
+
+[node name="Enemy" parent="Path2D" instance=ExtResource("4_mkmf4")]
+position = Vector2(754, 315.884)
+progress = 1902.9
+
+[node name="Enemy2" parent="Path2D" instance=ExtResource("4_mkmf4")]
+position = Vector2(256, 111.818)
+progress = 743.822
+
+[node name="Path2D2" type="Path2D" parent="."]
+curve = SubResource("Curve2D_1grky")
+
+[node name="Enemy" parent="Path2D2" instance=ExtResource("4_mkmf4")]
+position = Vector2(353.908, 673.274)
+progress = 1382.96
+
+[node name="Path2D3" type="Path2D" parent="."]
+curve = SubResource("Curve2D_xp5bi")
+
+[node name="Enemy" parent="Path2D3" instance=ExtResource("4_mkmf4")]
+position = Vector2(769.027, 957)
+progress = 158.027
+
+[node name="Path2D4" type="Path2D" parent="."]
+curve = SubResource("Curve2D_llwa7")
+
+[node name="Enemy" parent="Path2D4" instance=ExtResource("4_mkmf4")]
+position = Vector2(-169.679, 598.605)
+progress = 3632.48
+speed = 150.0

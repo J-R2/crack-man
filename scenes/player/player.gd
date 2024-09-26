@@ -11,10 +11,11 @@ const SPRITE_SIZE :int = 90 / 2 ## The size of the sprite, used to make a clean 
 @onready var screen_size = get_viewport_rect().size
 ## The user input direction vector.
 var direction := Vector2.ZERO
+@onready var hit_box: Area2D = $HitBox
 
 
 func _ready() -> void:
-	pass
+	hit_box.area_entered.connect(_on_hit_box_entered)
 
 
 func _process(delta: float) -> void:
@@ -31,3 +32,12 @@ func _process(delta: float) -> void:
 	# Warp the player if they enter the warp zones (the only areas not boxed in on a level)
 	position.x = wrapf(position.x, -SPRITE_SIZE, screen_size.x + SPRITE_SIZE)
 	position.y = wrapf(position.y, -SPRITE_SIZE, screen_size.y + SPRITE_SIZE)
+
+
+func _on_hit_box_entered(area :Area2D) -> void:
+	if area is KillBox:
+		print("died")
+
+
+
+

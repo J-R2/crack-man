@@ -4,6 +4,7 @@ extends Node2D
 ## Emitted once all drugs are consumed.
 signal level_finished
 
+
 ## The position that the player is set to once the level is loaded.
 @onready var start_position : Vector2 = $StartPosition.position
 ## The amount of drugs that start on the map.
@@ -13,6 +14,7 @@ var consumed_amount :int = 0
 
 ## The next level scene, can be empty if final level.
 @export var next_level :PackedScene
+
 
 
 func _ready() -> void:
@@ -29,3 +31,17 @@ func _on_drug_consumed() -> void :
 	consumed_amount += 1
 	if consumed_amount == drug_count:
 		level_finished.emit()
+
+
+
+
+
+
+
+
+
+
+
+
+
+

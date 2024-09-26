@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://ci5h4qfpbnha0"]
+[gd_scene load_steps=12 format=3 uid="uid://ci5h4qfpbnha0"]
 
 [ext_resource type="Script" path="res://scenes/player/player.gd" id="1_j8xq1"]
 [ext_resource type="Texture2D" uid="uid://c5hqnvyjcu2il" path="res://scenes/player/climb_spritesheet.png" id="1_retg3"]
@@ -47,10 +47,13 @@ height = 95.0
 [sub_resource type="CircleShape2D" id="CircleShape2D_qc6lm"]
 radius = 27.3849
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ovcaa"]
+radius = 20.0
+height = 95.3846
+
 [node name="Player" type="CharacterBody2D" groups=["player"]]
 scale = Vector2(0.65, 0.65)
 collision_layer = 2
-collision_mask = 13
 motion_mode = 1
 script = ExtResource("1_j8xq1")
 
@@ -59,15 +62,29 @@ sprite_frames = SubResource("SpriteFrames_2toij")
 animation = &"move"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2(11.25, -3.19744e-14)
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_4k5oc")
 
 [node name="CrackBox" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 8
 script = ExtResource("3_ykeij")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CrackBox"]
+visible = false
 z_index = 2
 position = Vector2(31.25, 0)
 shape = SubResource("CircleShape2D_qc6lm")
 debug_color = Color(1, 1, 1, 0.419608)
+
+[node name="HitBox" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitBox"]
+position = Vector2(10.7692, 1.59162e-12)
+rotation = 1.57079
+shape = SubResource("CapsuleShape2D_ovcaa")
+debug_color = Color(0.242203, 0.627771, 0.307589, 0.42)

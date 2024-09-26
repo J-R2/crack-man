@@ -1,9 +1,22 @@
-[gd_scene load_steps=5 format=3 uid="uid://dtiybepue41ym"]
+[gd_scene load_steps=8 format=3 uid="uid://dtiybepue41ym"]
 
 [ext_resource type="Script" path="res://scenes/levels/level.gd" id="1_s8xt6"]
 [ext_resource type="PackedScene" uid="uid://du4ed28cw11rb" path="res://scenes/levels/level_3/level_3.tscn" id="2_dl2l3"]
 [ext_resource type="PackedScene" uid="uid://oiylfy376wvh" path="res://scenes/levels/level_2/level_2_map.tscn" id="2_g6uky"]
 [ext_resource type="PackedScene" uid="uid://b3hjvym3k7ha2" path="res://scenes/cocaine/cocaine.tscn" id="3_jxt1f"]
+[ext_resource type="PackedScene" uid="uid://dou4fduun4n66" path="res://scenes/enemy/enemy.tscn" id="5_jskc3"]
+
+[sub_resource type="Curve2D" id="Curve2D_wyor1"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 62, 68, 0, 0, 0, 0, 513, 66, 0, 0, 0, 0, 514, 163, 0, 0, 0, 0, 863, 160, 0, 0, 0, 0, 863, 261, 0, 0, 0, 0, 961, 260, 0, 0, 0, 0, 961, 957, 0, 0, 0, 0, 498, 956, 0, 0, 0, 0, 499, 866, 0, 0, 0, 0, 160, 867, 0, 0, 0, 0, 161, 384, 0, 0, 0, 0, 63, 385, 0, 0, 0, 0, 62, 68)
+}
+point_count = 13
+
+[sub_resource type="Curve2D" id="Curve2D_a24gp"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 864, 376, 0, 0, 0, 0, 669, 377, 0, 0, 0, 0, 667, 258, 0, 0, 0, 0, 158, 255, 0, 0, 0, 0, 161, 484, 0, 0, 0, 0, 62, 483, 0, 0, 0, 0, 64, 765, 0, 0, 0, 0, 160, 764, 0, 0, 0, 0, 162, 863, 0, 0, 0, 0, 673, 863, 0, 0, 0, 0, 671, 764, 0, 0, 0, 0, 499, 765, 0, 0, 0, 0, 497, 675, 0, 0, 0, 0, 670, 673, 0, 0, 0, 0, 670, 482, 0, 0, 0, 0, 768, 481, 0, 0, 0, 0, 768, 641, 0, 0, 0, 0, 865, 641, 0, 0, 0, 0, 864, 376)
+}
+point_count = 19
 
 [node name="Level2" type="Node2D"]
 script = ExtResource("1_s8xt6")
@@ -15,6 +28,7 @@ next_level = ExtResource("2_dl2l3")
 position = Vector2(501, 913)
 
 [node name="Drugs" type="Node2D" parent="."]
+visible = false
 
 [node name="Cocaine" parent="Drugs" instance=ExtResource("3_jxt1f")]
 position = Vector2(87, 64)
@@ -1363,3 +1377,25 @@ rotation = 1.57079
 [node name="Cocaine315" parent="Drugs" instance=ExtResource("3_jxt1f")]
 position = Vector2(677, 562)
 rotation = 1.57079
+
+[node name="Path2D" type="Path2D" parent="."]
+curve = SubResource("Curve2D_wyor1")
+
+[node name="Enemy" parent="Path2D" instance=ExtResource("5_jskc3")]
+position = Vector2(961, 457.81)
+progress = 1293.84
+
+[node name="Enemy2" parent="Path2D" instance=ExtResource("5_jskc3")]
+position = Vector2(160.211, 765.151)
+progress = 2786.89
+
+[node name="Path2D2" type="Path2D" parent="."]
+curve = SubResource("Curve2D_a24gp")
+
+[node name="Enemy" parent="Path2D2" instance=ExtResource("5_jskc3")]
+position = Vector2(458.401, 256.771)
+progress = 522.622
+
+[node name="Enemy2" parent="Path2D2" instance=ExtResource("5_jskc3")]
+position = Vector2(644.417, 764.154)
+progress = 2264.7

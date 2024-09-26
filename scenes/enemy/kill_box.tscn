@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://tv0u5mpwp47a"]
+
+[ext_resource type="Script" path="res://scenes/enemy/kill_box.gd" id="1_tpp4n"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hb0s0"]
+radius = 17.0
+
+[node name="KillBox" type="Area2D"]
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("1_tpp4n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_hb0s0")
+debug_color = Color(0.891365, 0.295127, 0.354375, 0.42)
