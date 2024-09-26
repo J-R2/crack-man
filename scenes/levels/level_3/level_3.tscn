@@ -24,11 +24,11 @@ _data = {
 }
 point_count = 15
 
-[sub_resource type="Curve2D" id="Curve2D_llwa7"]
+[sub_resource type="Curve2D" id="Curve2D_f38q5"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 395, 361, 0, 0, 0, 0, 632, 360, 0, 0, 0, 0, 636, 478, 0, 0, 0, 0, 1221, 477, 0, 0, 0, 0, 1219, 1188, 0, 0, 0, 0, -173, 1188, 0, 0, 0, 0, -169, 478, 0, 0, 0, 0, -169, 478, 0, 0, 0, 0, 396, 476, 0, 0, 0, 0, 395, 361)
+"points": PackedVector2Array(0, 0, 0, 0, -61, 478, 0, 0, 0, 0, 405, 479, 0, 0, 0, 0, 402, 366, 0, 0, 0, 0, 634, 365, 0, 0, 0, 0, 636, 570, 0, 0, 0, 0, 401, 572, 0, 0, 0, 0, 406, 478, 0, 0, 0, 0, 1074, 483)
 }
-point_count = 10
+point_count = 8
 
 [node name="Level3" type="Node2D"]
 script = ExtResource("1_2eora")
@@ -1453,9 +1453,7 @@ position = Vector2(769.027, 957)
 progress = 158.027
 
 [node name="Path2D4" type="Path2D" parent="."]
-curve = SubResource("Curve2D_llwa7")
+curve = SubResource("Curve2D_f38q5")
 
 [node name="Enemy" parent="Path2D4" instance=ExtResource("4_mkmf4")]
-position = Vector2(-169.679, 598.603)
-progress = 3632.48
-speed = 150.0
+position = Vector2(-61, 478)

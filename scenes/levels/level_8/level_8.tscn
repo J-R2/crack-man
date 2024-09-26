@@ -1357,7 +1357,7 @@ position = Vector2(861, 367.829)
 progress = 922.287
 
 [node name="Enemy2" parent="Path2D" instance=ExtResource("4_mi2l1")]
-position = Vector2(64, 370.843)
+position = Vector2(64, 370.847)
 progress = 1848.26
 
 [node name="Path2D2" type="Path2D" parent="."]
@@ -1368,14 +1368,14 @@ position = Vector2(259.774, 159.388)
 progress = 914.485
 
 [node name="Enemy2" parent="Path2D2" instance=ExtResource("4_mi2l1")]
-position = Vector2(695.766, 62.2407)
+position = Vector2(695.767, 62.2407)
 progress = 1828.97
 
 [node name="Path2D3" type="Path2D" parent="."]
 curve = SubResource("Curve2D_5wqdr")
 
 [node name="Enemy" parent="Path2D3" instance=ExtResource("4_mi2l1")]
-position = Vector2(160.548, 640.836)
+position = Vector2(160.548, 640.832)
 progress = 2427.41
 
 [node name="Path2D4" type="Path2D" parent="."]
