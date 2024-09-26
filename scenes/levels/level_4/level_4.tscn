@@ -1,6 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://wmhlsxgmt51o"]
+[gd_scene load_steps=10 format=3 uid="uid://wmhlsxgmt51o"]
 
 [ext_resource type="Script" path="res://scenes/levels/level.gd" id="1_tmfyp"]
+[ext_resource type="PackedScene" uid="uid://brv16pqhbfcwy" path="res://scenes/levels/level_5/level_5.tscn" id="2_c0gsk"]
 [ext_resource type="PackedScene" uid="uid://omfltwhnmluv" path="res://scenes/levels/level_4/level_4_map.tscn" id="2_py8bg"]
 [ext_resource type="PackedScene" uid="uid://dvb77nosvyl0b" path="res://scenes/cocaine/cocaine.tscn" id="3_1gr5k"]
 [ext_resource type="PackedScene" uid="uid://dou4fduun4n66" path="res://scenes/enemy/enemy.tscn" id="4_q4t7c"]
@@ -31,6 +32,7 @@ point_count = 9
 
 [node name="Level4" type="Node2D"]
 script = ExtResource("1_tmfyp")
+next_level = ExtResource("2_c0gsk")
 
 [node name="Level4Map" parent="." instance=ExtResource("2_py8bg")]
 
@@ -1387,18 +1389,18 @@ progress = 379.875
 curve = SubResource("Curve2D_3uew0")
 
 [node name="Enemy" parent="Path2D2" instance=ExtResource("4_q4t7c")]
-position = Vector2(162.084, 222.15)
+position = Vector2(162.084, 222.151)
 progress = 757.16
 
 [node name="Enemy2" parent="Path2D2" instance=ExtResource("4_q4t7c")]
-position = Vector2(860, 764.982)
+position = Vector2(860, 764.981)
 progress = 2194.03
 
 [node name="Path2D3" type="Path2D" parent="."]
 curve = SubResource("Curve2D_1v06d")
 
 [node name="Enemy" parent="Path2D3" instance=ExtResource("4_q4t7c")]
-position = Vector2(242.736, 964)
+position = Vector2(242.735, 964)
 progress = 2396.33
 
 [node name="Enemy2" parent="Path2D3" instance=ExtResource("4_q4t7c")]
@@ -1409,5 +1411,5 @@ progress = 771.41
 curve = SubResource("Curve2D_kg6gy")
 
 [node name="Enemy" parent="Path2D4" instance=ExtResource("4_q4t7c")]
-position = Vector2(631.772, 763.477)
+position = Vector2(631.775, 763.477)
 progress = 1188.78
