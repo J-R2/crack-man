@@ -4,12 +4,13 @@ var buttons :Array[TextureButton]
 @onready var buttons_container: Control = %ButtonsContainer
 @onready var rules_container: Control = %RulesContainer
 var audio_stream_player :AudioStreamPlayer
+@onready var game_finished_container: Control = %GameFinishedContainer
 
 
 func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS
 	get_tree().paused = true
-	buttons = [%PlayButton, %RulesButton, %QuitButton, %ReturnButton]
+	buttons = [%PlayButton, %RulesButton, %QuitButton, %ReturnButton, %RestartButton]
 	audio_stream_player = $AudioStreamPlayer
 	for button in buttons:
 		button.mouse_entered.connect(audio_stream_player.play)
@@ -18,10 +19,21 @@ func _ready() -> void:
 	%RulesButton.pressed.connect(_show_rules)
 	%ReturnButton.pressed.connect(_show_main_menu)
 	%QuitButton.pressed.connect(get_tree().quit)
+	%RestartButton.pressed.connect(get_tree().reload_current_scene)
 	_show_main_menu()
 	get_tree().get_first_node_in_group("level").visible = false
 	get_tree().get_first_node_in_group("player").visible = false
+	get_tree().get_root().get_node("Main").game_finished.connect(_on_game_finished)
 
+
+func _on_game_finished() -> void :
+	get_tree().paused = true
+	_hide_menu_entries()
+	show()
+	$CanvasLayer.visible = true
+	game_finished_container.show()
+	%QuitButton.disabled = false
+	%RestartButton.disabled = false
 
 	
 func _on_play_button_pressed() -> void :
@@ -59,6 +71,8 @@ func _hide_menu_entries() -> void :
 	_disable_buttons()
 	buttons_container.hide()
 	rules_container.hide()
+	game_finished_container.hide()
+	
 
 
 

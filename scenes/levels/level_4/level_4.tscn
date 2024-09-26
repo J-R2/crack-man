@@ -37,7 +37,7 @@ next_level = ExtResource("2_c0gsk")
 [node name="Level4Map" parent="." instance=ExtResource("2_py8bg")]
 
 [node name="StartPosition" type="Marker2D" parent="."]
-position = Vector2(513, 943)
+position = Vector2(513, 956)
 
 [node name="Drugs" type="Node2D" parent="."]
 visible = false

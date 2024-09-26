@@ -45,7 +45,7 @@ radius = 26.1539
 height = 95.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_qc6lm"]
-radius = 27.3849
+radius = 27.2115
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ovcaa"]
 radius = 20.0
@@ -73,7 +73,6 @@ collision_mask = 8
 script = ExtResource("3_ykeij")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CrackBox"]
-visible = false
 z_index = 2
 position = Vector2(31.25, 0)
 shape = SubResource("CircleShape2D_qc6lm")

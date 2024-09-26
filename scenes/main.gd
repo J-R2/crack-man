@@ -1,6 +1,8 @@
 # main.gd
 extends Node2D
 
+signal game_finished
+
 ## The player will remain persistent through each level.
 @onready var player: Player = $Player
 ## Keeps track of the level node
@@ -13,6 +15,11 @@ func _ready() -> void:
 ## Frees the current level and loads the next one into the scene tree, then initializes the next level
 func _on_level_finished() -> void :
 	player.position = Vector2(-100, -100) # Move the player while the level is changing.
+	if level.is_final_level == true:
+		level.hide()
+		player.hide()
+		game_finished.emit()		
+		return
 	if level.next_level != null: # Ensure there is a next level to load.
 		var next_level_scene = level.next_level.instantiate()
 		level.queue_free() # Free the current level

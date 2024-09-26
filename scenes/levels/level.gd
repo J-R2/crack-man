@@ -3,6 +3,7 @@ extends Node2D
 
 ## Emitted once all drugs are consumed.
 signal level_finished
+@export var is_final_level :bool = false
 
 
 ## The position that the player is set to once the level is loaded.

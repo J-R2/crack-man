@@ -31,7 +31,7 @@ next_level = ExtResource("2_dmxif")
 [node name="Level5Map" parent="." instance=ExtResource("1_8ta6n")]
 
 [node name="StartPosition" type="Marker2D" parent="."]
-position = Vector2(512, 913)
+position = Vector2(512, 933)
 
 [node name="Drugs" type="Node2D" parent="."]
 visible = false
@@ -1416,11 +1416,11 @@ rotation = -1.5708
 curve = SubResource("Curve2D_y7pv6")
 
 [node name="Enemy" parent="Path2D" instance=ExtResource("3_tiy4p")]
-position = Vector2(348.001, 158)
+position = Vector2(348, 158)
 progress = 991.001
 
 [node name="Enemy2" parent="Path2D" instance=ExtResource("3_tiy4p")]
-position = Vector2(765.887, 540.996)
+position = Vector2(765.887, 540.993)
 progress = 1982.0
 
 [node name="Enemy3" parent="Path2D" instance=ExtResource("3_tiy4p")]
@@ -1431,11 +1431,11 @@ progress = 41.7422
 curve = SubResource("Curve2D_o0s0s")
 
 [node name="Enemy" parent="Path2D2" instance=ExtResource("3_tiy4p")]
-position = Vector2(956.507, 305.89)
+position = Vector2(956.508, 305.895)
 progress = 1317.93
 
 [node name="Enemy2" parent="Path2D2" instance=ExtResource("3_tiy4p")]
-position = Vector2(256.685, 592.413)
+position = Vector2(256.685, 592.416)
 progress = 3514.47
 
 [node name="Path2D3" type="Path2D" parent="."]
