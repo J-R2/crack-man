@@ -3,6 +3,7 @@ extends Node2D
 
 ## Emitted once all drugs are consumed.
 signal level_finished
+## Used in main_menu to show the eplay game message
 @export var is_final_level :bool = false
 
 

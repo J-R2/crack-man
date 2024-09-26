@@ -5,9 +5,9 @@ const SPEED :int = 250 ## The player's speed.
 const STEERING_FORCE :int = 15 ## The player sprites steering force.
 const SPRITE_SIZE :int = 90 / 2 ## The size of the sprite, used to make a clean warp to the other side of the screen.
 
-signal player_hit
-@onready var lives_label: Label = $LivesLabel
-var lives_count = 3
+signal player_hit ## emitted every time the player touches a ghost
+@onready var lives_label: Label = $LivesLabel ## The lives_count display
+var lives_count = 3 ## The number of lives the player has, if 0, the game restarts
 
 ## The player sprite.
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
@@ -15,7 +15,11 @@ var lives_count = 3
 @onready var screen_size = get_viewport_rect().size
 ## The user input direction vector.
 var direction := Vector2.ZERO
+## Detects if ghosts hit the player
 @onready var hit_box: Area2D = $HitBox
+@onready var hit_audio_player: AudioStreamPlayer = $HitAudioPlayer
+
+
 
 
 func _ready() -> void:
@@ -32,14 +36,16 @@ func _process(delta: float) -> void:
 		rotation = velocity.angle() # rotate towards the velocity
 		animated_sprite_2d.play("move") # play the movement animation
 	else: animated_sprite_2d.stop() # stop the animation when the desired velocity is ZERO
-	move_and_slide() # move and slide(), the  motion mode is set to floating in inspector for top down movement
+	move_and_slide() # the  motion mode is set to floating in inspector for top down movement
 	# Warp the player if they enter the warp zones (the only areas not boxed in on a level)
 	position.x = wrapf(position.x, -SPRITE_SIZE, screen_size.x + SPRITE_SIZE)
 	position.y = wrapf(position.y, -SPRITE_SIZE, screen_size.y + SPRITE_SIZE)
 
 
+## Logic for if a ghost hits the player
 func _on_hit_box_entered(area :Area2D) -> void:
 	if area is KillBox:
+		if hit_audio_player.playing == false: hit_audio_player.play()
 		player_hit.emit()
 		lives_count -= 1
 		if lives_count == 2:
@@ -47,6 +53,8 @@ func _on_hit_box_entered(area :Area2D) -> void:
 		if lives_count == 1:
 			lives_label.text = "I"
 		if lives_count == 0:
+			lives_label.text = "Dead"
+			await hit_audio_player.finished
 			get_tree().reload_current_scene()
 			
 

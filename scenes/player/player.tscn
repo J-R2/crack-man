@@ -1,8 +1,9 @@
-[gd_scene load_steps=12 format=3 uid="uid://ci5h4qfpbnha0"]
+[gd_scene load_steps=13 format=3 uid="uid://ci5h4qfpbnha0"]
 
 [ext_resource type="Script" path="res://scenes/player/player.gd" id="1_j8xq1"]
 [ext_resource type="Texture2D" uid="uid://c5hqnvyjcu2il" path="res://scenes/player/climb_spritesheet.png" id="1_retg3"]
 [ext_resource type="Script" path="res://scenes/player/crack_box.gd" id="3_ykeij"]
+[ext_resource type="AudioStream" uid="uid://5e1pujqg74o7" path="res://scenes/player/vgdeathsound.ogg" id="4_c11c7"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nbkoj"]
 atlas = ExtResource("1_retg3")
@@ -97,3 +98,7 @@ rotation = 1.59176
 theme_override_font_sizes/font_size = 32
 text = "I I I"
 horizontal_alignment = 1
+
+[node name="HitAudioPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_c11c7")
+volume_db = -10.0
