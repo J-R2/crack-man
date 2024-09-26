@@ -17,8 +17,9 @@ func _ready() -> void:
 
 
 func _process(delta: float) -> void:
-	direction.x = Input.get_axis("move_left", "move_right")
-	direction.y = Input.get_axis("move_up", "move_down")
+	#direction.x = Input.get_axis("move_left", "move_right")
+	#direction.y = Input.get_axis("move_up", "move_down")
+	direction = Input.get_vector("move_left", "move_right", "move_up", "move_down")
 	direction = direction.normalized()
 	var desired_velocity :Vector2 = direction * SPEED
 	var steering_vector :Vector2 = desired_velocity - velocity
