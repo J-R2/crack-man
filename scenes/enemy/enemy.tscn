@@ -1,8 +1,9 @@
-[gd_scene load_steps=16 format=3 uid="uid://dou4fduun4n66"]
+[gd_scene load_steps=17 format=3 uid="uid://dou4fduun4n66"]
 
 [ext_resource type="Script" path="res://scenes/enemy/enemy.gd" id="1_gkw6w"]
 [ext_resource type="Texture2D" uid="uid://3pburboo06m4" path="res://scenes/enemy/ghost.png" id="1_yx0s7"]
 [ext_resource type="PackedScene" uid="uid://tv0u5mpwp47a" path="res://scenes/enemy/kill_box.tscn" id="3_1d21i"]
+[ext_resource type="AudioStream" uid="uid://c4hlbyrb5qbb0" path="res://scenes/enemy/alien_abduction.wav" id="4_1erbh"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ch4k7"]
 atlas = ExtResource("1_yx0s7")
@@ -101,3 +102,15 @@ autoplay = "idle"
 frame_progress = 0.720999
 
 [node name="KillBox" parent="." instance=ExtResource("3_1d21i")]
+
+[node name="StartTimer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+autostart = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_1erbh")
+volume_db = -40.0
+pitch_scale = 0.46
+autoplay = true
+stream_paused = true

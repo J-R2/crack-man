@@ -8,6 +8,9 @@ extends PathFollow2D
 
 
 func _ready() -> void:
+	var timer: Timer = $StartTimer
+	timer.timeout.connect(timer.queue_free)
+	await timer.timeout
 	advance()
 
 

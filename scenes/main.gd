@@ -27,6 +27,6 @@ func _initialize_level() -> void :
 	level.level_finished.connect(_on_level_finished) # Connect the signal to change levels
 	player.position = level.start_position # Reset the player position to the level's start marker
 	player.rotation = Vector2.UP.angle() # Reset the player rotation.
-		
+	player.top_level = true
 	
 	

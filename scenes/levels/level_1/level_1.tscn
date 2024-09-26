@@ -34,7 +34,6 @@ next_level = ExtResource("2_5xi6l")
 position = Vector2(513, 722)
 
 [node name="Drugs" type="Node2D" parent="."]
-visible = false
 
 [node name="Cocaine" parent="Drugs" instance=ExtResource("4_ek2o6")]
 position = Vector2(70, 68)
@@ -1541,11 +1540,11 @@ curve = SubResource("Curve2D_gcgtn")
 position = Vector2(504, 112)
 
 [node name="Enemy2" parent="Path2D" instance=ExtResource("5_4ehw5")]
-position = Vector2(68.3806, 761.131)
+position = Vector2(68.3806, 761.132)
 progress = 3293.02
 
 [node name="Enemy3" parent="Path2D" instance=ExtResource("5_4ehw5")]
-position = Vector2(961.329, 621.762)
+position = Vector2(961.329, 621.766)
 progress = 1200.89
 
 [node name="Path2D2" type="Path2D" parent="."]
@@ -1559,5 +1558,5 @@ progress = 209.971
 curve = SubResource("Curve2D_vgnei")
 
 [node name="Enemy" parent="Path2D3" instance=ExtResource("5_4ehw5")]
-position = Vector2(769, 354.566)
+position = Vector2(769, 354.563)
 progress = 4281.72
