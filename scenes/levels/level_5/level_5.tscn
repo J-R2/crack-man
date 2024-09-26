@@ -1,6 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://brv16pqhbfcwy"]
+[gd_scene load_steps=9 format=3 uid="uid://brv16pqhbfcwy"]
 
 [ext_resource type="PackedScene" uid="uid://1hdxo6wo5wn7" path="res://scenes/levels/level_5/level_5_map.tscn" id="1_8ta6n"]
+[ext_resource type="Script" path="res://scenes/levels/level.gd" id="1_l5ov8"]
+[ext_resource type="PackedScene" uid="uid://dkkewk4to82f1" path="res://scenes/levels/level_6/level_6.tscn" id="2_dmxif"]
 [ext_resource type="PackedScene" uid="uid://dvb77nosvyl0b" path="res://scenes/cocaine/cocaine.tscn" id="2_m67tv"]
 [ext_resource type="PackedScene" uid="uid://dou4fduun4n66" path="res://scenes/enemy/enemy.tscn" id="3_tiy4p"]
 
@@ -23,6 +25,8 @@ _data = {
 point_count = 9
 
 [node name="Level5" type="Node2D"]
+script = ExtResource("1_l5ov8")
+next_level = ExtResource("2_dmxif")
 
 [node name="Level5Map" parent="." instance=ExtResource("1_8ta6n")]
 
