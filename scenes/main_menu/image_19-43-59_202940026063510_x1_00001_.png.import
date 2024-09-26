@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dykimiuynrqp3"
-path="res://.godot/imported/crack-man_banner.png-ab1f1abd1b30c80a4d9374b88b60c31f.ctex"
+uid="uid://cx8cl2chtnqsr"
+path="res://.godot/imported/image_19-43-59_202940026063510_x1_00001_.png-c3d7a0784868c0e705f9bbe6cbf79b7f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/main_menu/art/crack-man_banner.png"
-dest_files=["res://.godot/imported/crack-man_banner.png-ab1f1abd1b30c80a4d9374b88b60c31f.ctex"]
+source_file="res://scenes/main_menu/image_19-43-59_202940026063510_x1_00001_.png"
+dest_files=["res://.godot/imported/image_19-43-59_202940026063510_x1_00001_.png-c3d7a0784868c0e705f9bbe6cbf79b7f.ctex"]
 
 [params]
 
