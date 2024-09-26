@@ -1,3 +1,4 @@
+![Crack-Man](scenes/main_menu/image_19-43-59_202940026063510_x1_00001_.png)
 
 ### CREDITS
 
@@ -41,3 +42,8 @@
 
 [8bit Jester Battle](https://opengameart.org/content/8-bit-jester-battle) by [HydroGene](https://opengameart.org/users/hydrogene)
 
+
+### SCREENSHOTS
+![Crack-Man](screenshots/screenshot1.png)
+![Crack-Man](screenshots/screenshot2.png)
+![Crack-Man](screenshots/screenshot3.png)
