@@ -1,5 +1,7 @@
 ![Crack-Man](scenes/main_menu/image_19-43-59_202940026063510_x1_00001_.png)
 
+[Play Crack-Man](https://easyspeeds.itch.io/crack-man)
+
 ### CREDITS
 
 [Chibi Ninja](https://opengameart.org/content/2d-chibi-ninja-8-actions) by [ashuuya](https://opengameart.org/users/ashuuya)
